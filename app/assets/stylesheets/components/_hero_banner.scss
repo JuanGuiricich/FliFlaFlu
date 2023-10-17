@@ -1,4 +1,37 @@
-.hero-banner{
+.hero-banner {
   background-color: #E4F548;
+  width: 100%;
   height: 941px;
+  padding-top: 88px;
+  position: absolute;
+}
+
+
+.hero-title {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 72px;
+  line-height: 90px;
+}
+
+.hero-paragraph {
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.hero-img-container {
+  position: relative;
+}
+
+.firulete {
+  position: absolute;
+  top: 88px;
+  right: 400px;
+  z-index: 100;
+}
+
+.hero-img {
+  width: 100%;
 }

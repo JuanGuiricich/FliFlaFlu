@@ -1,9 +1,13 @@
-<div class="hero-banner d-flex justify-content-between">
-  <div class="hero-title">
-    <h2>Tomamos tus objetivos como propios</h2>
-    <p>Tú gestionas tu marca, nosotros gestionamos tu presencia digital.</p>
+<div class="hero-banner d-flex justify-content-between align-items-center">
+  <div>
+    <div class="container hero-text col-6">
+      <h2 class="hero-title">Tomamos tus objetivos como propios</h2>
+      <p class="hero-paragraph mt-5 mb-5">Tú gestionas tu marca, nosotros gestionamos tu presencia digital.</p>
+      <%= link_to "Hablemos!", "#", class: "btn-flat" %>
+    </div>
   </div>
-  <div class="hero-img">
-    <%= image_tag("hero-img.png", alt: "Hero image") %>
+    <%= image_tag("firulete.png", alt: "Drawing", class: "firulete") %>
+  <div class="hero-img-container">
+    <%= image_tag("hero-img.png", alt: "Hero image", class: "hero-img") %>
   </div>
 </div>
