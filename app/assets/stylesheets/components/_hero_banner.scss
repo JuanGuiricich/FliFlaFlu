@@ -1,9 +1,9 @@
 .hero-banner {
   background-color: #E4F548;
   width: 100%;
-  height: 941px;
+  height: 58.8rem;
   padding-top: 88px;
-  position: absolute;
+  position: relative;
 }
 
 
@@ -23,12 +23,15 @@
 
 .hero-img-container {
   position: relative;
+  width: 47.625rem;
+  height: 50.875rem;
+  padding-top: 5.5rem;
 }
 
 .firulete {
   position: absolute;
-  top: 88px;
-  right: 400px;
+  top: 5.5rem;
+  right: 15rem;
   z-index: 100;
 }
 

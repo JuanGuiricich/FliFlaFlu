@@ -1,0 +1,24 @@
+
+
+.our-commitments-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.commitment {
+  width: 280px;
+}
+
+.commitment h4 {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'open sans', sans-serif;
+}
+
+.commitment p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'open sans', sans-serif;
+}
