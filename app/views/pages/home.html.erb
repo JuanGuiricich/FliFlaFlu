@@ -36,8 +36,35 @@
       </div>
     </div>
   </div>
-  <div class="col-6 d-flex flex-column">
-    <h2 class="">Nuestra manera</h2>
-    <p class="">Conoces tu marca, tus objetivos y necesidades mejor que nadie. Estamos especializados en entender tus necesidades y desarrollar tu estrategia de posicionamiento digital.</p>
+  <div class="our-way col-6 d-flex flex-column">
+    <div class="container col-8">
+      <h2 class="">Nuestra manera</h2>
+      <p class="">Conoces tu marca, tus objetivos y necesidades mejor que nadie. Estamos especializados en entender tus necesidades y desarrollar tu estrategia de posicionamiento digital.</p>
+    </div>
+  </div>
+</div>
+<div class="our-team">
+  <p>TODO</p>
+</div>
+<div class="container">
+  <div class="container">
+    <%= form_for @contact do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name, required: true %>
+      <%= f.label :email %>
+      <%= f.text_field :email, required: true %>
+      <%= f.label :message %>
+      <%= f.text_area :message, as: :text %>
+      <%= f.submit 'Send Message', class: "button" %>
+    <% end %>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-links">
+    <%= image_tag("logo-white.png", alt: "Logo") %>
+  </div>
+  <div class="footer-copyright d-flex justify-content-center align-items-center">
+    <a href="#">Terms of use</a>
+    <a href="#">Privacy policy</a>
   </div>
 </div>

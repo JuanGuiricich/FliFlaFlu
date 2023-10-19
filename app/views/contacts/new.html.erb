@@ -1,0 +1,13 @@
+<h1>Say hello!</h1>
+
+  <div class="container">
+    <%= form_for @contact do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name, required: true %>
+      <%= f.label :email %>
+      <%= f.text_field :email, required: true %>
+      <%= f.label :message %>
+      <%= f.text_area :message, as: :text %>
+      <%= f.submit 'Send Message', class: "button" %>
+    <% end %>
+  </div>

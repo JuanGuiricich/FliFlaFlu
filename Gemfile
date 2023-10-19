@@ -77,3 +77,6 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+# Mail_form for contact form
+gem 'mail_form'
