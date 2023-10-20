@@ -46,16 +46,13 @@
 <div class="our-team">
   <p>TODO</p>
 </div>
-<div class="container">
+<div class="container m-5">
   <div class="container">
-    <%= form_for @contact do |f| %>
-      <%= f.label :name %>
-      <%= f.text_field :name, required: true %>
-      <%= f.label :email %>
-      <%= f.text_field :email, required: true %>
-      <%= f.label :message %>
-      <%= f.text_area :message, as: :text %>
-      <%= f.submit 'Send Message', class: "button" %>
+    <%= simple_form_for @contact do |f|  %>
+      <%= f.input :name, required: true %>
+      <%= f.input :email, required: true %>
+      <%= f.input :message, as: :text, required: false %>
+      <%= f.button :submit, 'Send Message', class: "btn-flat" %>
     <% end %>
   </div>
 </div>
