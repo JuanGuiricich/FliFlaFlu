@@ -1,0 +1,49 @@
+.our-team {
+  min-height: 100vh;
+  background-color: #F8F9F9;
+}
+
+.our-team-text-container {
+  margin-left: 150px;
+}
+
+.our-team-text {
+  width: 50vh;
+}
+
+.our-team-text h2 {
+  font-family: 'open sans', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.our-team-text p {
+  font-family: 'open sans', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.avatar {
+  margin-top: 50px;
+  h3 {
+    font-family: 'open sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  p {
+    font-family: 'open sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.mechi {
+  position: relative;
+}
+
+.hat-img {
+  position: absolute;
+  top: -15%;
+  left: 33%;
+
+}

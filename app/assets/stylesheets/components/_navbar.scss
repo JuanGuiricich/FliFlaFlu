@@ -1,20 +1,9 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: #F8F9F9;
-  height: 88px;
-  width: 100%;
-  z-index: 1000;
+.navbar-brand {
+  padding-left: 10rem;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.container-navbar {
-  margin-left: 120px;
-}
-
-.logo {
-  width: 197.91px;
-  height: 47.43px;
+@media (max-width: 992px) {
+  .navbar-brand {
+    padding-left: 0;
+  }
 }

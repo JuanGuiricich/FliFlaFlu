@@ -1,0 +1,53 @@
+.how-it-works {
+  background-color: #D8ECEC;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+}
+
+.how-it-works h2 {
+  font-family: 'open sans', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 100px;
+}
+
+.reach-container {
+  display: flex;
+  position: relative;
+}
+
+.reach {
+  position: relative;
+}
+
+.reach p {
+  font-family: 'open sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.reach h4 {
+  position: relative;
+  z-index: 999;
+  margin-bottom: 1rem;
+  font-family: 'open sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.vector-how-it-works-1,
+.vector-how-it-works-2,
+.vector-how-it-works-3,
+.vector-how-it-works-4 {
+  position: absolute;
+  top: -4px;
+  left: -8px;
+  z-index: 1; /* To put the image behind the text */
+}
+
+@media (max-width: 992px) {
+  .how-it-works {
+    padding: 6rem;
+  }
+}

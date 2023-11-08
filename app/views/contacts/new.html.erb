@@ -1,13 +1,29 @@
-<h1>Say hello!</h1>
-
-  <div class="container">
-    <%= form_for @contact do |f| %>
-      <%= f.label :name %>
-      <%= f.text_field :name, required: true %>
-      <%= f.label :email %>
-      <%= f.text_field :email, required: true %>
-      <%= f.label :message %>
-      <%= f.text_area :message, as: :text %>
-      <%= f.submit 'Send Message', class: "button" %>
-    <% end %>
+<div class="p-5 contact-background">
+  <div class="row p-5 justify-content-center">
+    <div class="col-4 d-flex flex-column gap-5">
+      <div class="contact-text">
+        <h2>Charlemos!</h2>
+        <p class="subtitle-text">Tú gestionas tu marca, nosotros gestionamos tu presencia digital.</p>
+      </div>
+      <div class="contact-text">
+        <h3>Email</h3>
+        <p>mechinaveira@gmail.com</p>
+      </div>
+      <div class="contact-text">
+        <h3>Socials</h3>
+        <p>LinkedIn</p>
+      </div>
+      <div class="contact-text">
+        <%= image_tag("fff.png", alt: "fli fla flu logo") %>
+      </div>
+    </div>
+    <div class="col-4">
+      <%= simple_form_for(@contact) do |f|  %>
+        <%= f.input :name %>
+        <%= f.input :email %>
+        <%= f.input :message, as: :text, required: false %>
+        <%= f.submit "Enviar mensaje", class: "btn-flat submit-btn" %>
+      <% end %>
+    </div>
   </div>
+</div>

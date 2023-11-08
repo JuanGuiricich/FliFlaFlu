@@ -1,0 +1,36 @@
+.banner-container {
+  background-color: #D8ECEC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.banner {
+  width: 1262px;
+  height: 455px;
+  border-radius: 10px;
+  background-image: url('component.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-contact-text h2 {
+  font-family: 'open sans', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: white;
+}
+
+.contact-banner-img {
+  position: absolute;
+  top: 0;
+  right: -8%;
+}
+
+@media (max-width: 992px) {
+  .banner-contact-text h2 {
+  font-size: 2rem;
+  }
+}

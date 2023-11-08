@@ -1,67 +1,162 @@
 <div class="hero-banner d-flex justify-content-between align-items-center">
-  <div>
+  <div class="media-padding-hero">
     <div class="container hero-text col-8">
       <h2 class="hero-title">Tomamos tus objetivos como propios</h2>
       <p class="hero-paragraph mt-5 mb-5">Tú gestionas tu marca, nosotros gestionamos tu presencia digital.</p>
-      <%= link_to "Hablemos!", "#", class: "btn-flat" %>
+      <%= link_to 'Hablanos', new_contact_path, class: 'btn-flat' %>
     </div>
-  <div>
-  </div class="firulete-container">
+  </div>
+  <div class="d-none d-sm-block firulete-container">
     <%= image_tag("firulete.png", alt: "Drawing", class: "firulete") %>
   </div>
-  <div class="hero-img-container">
+  <div class="d-none d-sm-block hero-img-container">
     <%= image_tag("hero-img.png", alt: "Hero image", class: "hero-img") %>
   </div>
 </div>
-<div class="our-commitments d-flex justify-content-center align-items-center p-5">
+<div class="our-commitments justify-content-center align-items-center p-5">
+  <div class="row">
+    <div class="our-way col-12 col-sm-6 d-flex align-items-center justify-content-center flex-column ">
+      <div class="col-12 col-sm-8">
+        <h2 class="pb-3">Nuestra manera</h2>
+        <p>Conoces tu marca, tus objetivos y necesidades mejor que nadie. Estamos especializados en entender tus necesidades y desarrollar tu estrategia de posicionamiento digital.</p>
+      </div>
+    </div>
+      <div class="col-12 col-sm-6 our-commitments-container row">
+        <div class="left-side row col-12">
+          <div class="commitment">
+            <h4>Los objetivos comerciales son nuestra prioridad</h4>
+            <p>Reconocemos los puntos débiles e identificamos la mejor manera de avanzar.</p>
+          </div>
+          <div class="commitment">
+            <h4>Adaptamos una solución digital a la estrategia de la marca.</h4>
+            <p>El valor radica en diseñar una estrategia diseñada y personalizada a las necesidades y objetivos de tu negocio.</p>
+          </div>
+        </div>
+        <div class="right-side row col-12">
+          <div class="commitment">
+            <h4>Expertos alineados contigo</h4>
+            <p>Trabajamos juntos y con total transparencia para que comprendas todo el proceso. Nuestro diálogo será fluido y claro.</p>
+          </div>
+          <div class="commitment">
+            <h4>Tomamos decisiones basadas en datos</h4>
+            <p>Te mostramos el escenario para afrontarlo desde un enfoque proactivo en la planificación y optimización. Logramos nuestros objetivos juntos.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="how-it-works">
+  <h2>Nuestro Alcance</h2>
+  <div class="reach-container row">
+    <div class="reach container col">
+      <%= image_tag("vector-how-it-works.png", alt: "Drawing", class: "vector-how-it-works-1") %>
+      <h4>01 Estrategia</h4>
+      <p>Desarrollar una estrategia digital acorde a la de marketing, investigar el mercado y competidores para estrategia competitiva, y definir un mix de medios ideal para el cliente y objetivos.</p>
+    </div>
+    <div class="reach container col">
+      <%= image_tag("vector-how-it-works.png", alt: "Drawing", class: "vector-how-it-works-2") %>
+      <h4>02 Planificación</h4>
+      <p>Se define el presupuesto por medio, se estiman los resultados, se definen las audiencias, y se recomiendan creativos, materiales y formatos de anuncios para ejecutar la estrategia.</p>
+    </div>
+    <div class="reach container col">
+      <%= image_tag("vector-how-it-works.png", alt: "Drawing", class: "vector-how-it-works-3") %>
+      <h4>03 Implementación</h4>
+      <p>Se implementan las campañas en plataformas digitales, se realizan controles diarios y se optimizan las campañas.</p>
+    </div>
+    <div class="reach container col">
+      <%= image_tag("vector-how-it-works.png", alt: "Drawing", class: "vector-how-it-works-4") %>
+      <h4>04 Reporting</h4>
+      <p>Se generan reportes mensuales en Data Studio que ofrecen insights de campaña sobre los resultados, incluyendo análisis de datos desde Analytics para comprender los resultados de toda la estrategia.</p>
+    </div>
+  </div>
+</div>
+<div class="our-commitments d-flex justify-content-center align-items-center p-5 bg-color-gray">
+  <div class="our-way col-6 d-flex flex-column">
+    <div class="container col-8">
+      <h2>Nuestra versatilidad</h2>
+      <p>Entendemos que el ecosistema digital es más complejo de lo que parece, por eso nos volcamos hacia distintos pilares para poder complementar nuestro trabajo. Es por eso que a veces nos convertimos en:</p>
+    </div>
+  </div>
   <div class="col-6 our-commitments-container">
     <div class="left-side">
       <div class="commitment">
-        <h4>Los objetivos comerciales son nuestra prioridad</h4>
-        <p>Reconocemos los puntos débiles e identificamos la mejor manera de avanzar.</p>
+        <h4>TSE</h4>
+        <p>Pegado y seteo de códigos de seguimiento. Creación de eventos de conversión para medir en Analytics a través de Tag Manager.</p>
       </div>
       <div class="commitment">
-        <h4>Adaptamos una solución digital a la estrategia de la marca.</h4>
-        <p>El valor radica en diseñar una estrategia diseñada y personalizada a las necesidades y objetivos de tu negocio.</p>
+        <h4>Consultores</h4>
+        <p>En casos de falta claridad en la organización de accesos, la medición en Analytics, y la gestión de productos sin stock.</p>
       </div>
     </div>
     <div class="right-side">
       <div class="commitment">
-        <h4>Expertos alineados contigo</h4>
-        <p>Trabajamos juntos y con total transparencia para que comprendas todo el proceso. Nuestro diálogo será fluido y claro.</p>
+        <h4>Data Science</h4>
+        <p>Desarrollamos Dashboards en Data Studio para poder ver información en Tiempo Real, tanto de medios como del negocio.</p>
       </div>
       <div class="commitment">
-        <h4>Tomamos decisiones basadas en datos</h4>
-        <p>Te mostramos el escenario para afrontarlo desde un enfoque proactivo en la planificación y optimización. Logramos nuestros objetivos juntos.</p>
+        <h4>Docentes</h4>
+        <p>Creamos y llevamos adelante capacitaciones o cursos a medida para garantizar el entendimiento del ecosistema digital: de medios y con todo lo que se vincula.</p>
       </div>
     </div>
   </div>
-  <div class="our-way col-6 d-flex flex-column">
-    <div class="container col-8">
-      <h2 class="">Nuestra manera</h2>
-      <p class="">Conoces tu marca, tus objetivos y necesidades mejor que nadie. Estamos especializados en entender tus necesidades y desarrollar tu estrategia de posicionamiento digital.</p>
+</div>
+<div class="our-customers">
+  <div class="customers-text">
+    <h2>Nuestros clientes</h2>
+    <p>Trabajamos en equipo, vos sos parte en cada etapa.</p>
+  </div>
+  <div class="d-none d-md-block">
+    <div class="logos">
+      <%= image_tag("logo-urban-recovery.png", alt: "Logo Urban Recovery", class: "customer-logo") %>
+      <%= image_tag("logo-remax.png", alt: "Logo Remax", class: "customer-logo") %>
+      <%= image_tag("logo-essen.png", alt: "Logo Essen", class: "customer-logo") %>
+      <%= image_tag("logo-stanley.png", alt: "Logo Stanley", class: "customer-logo") %>
+      <%= image_tag("logo-soulmat.jpg", alt: "Logo Soul Mat", class: "customer-logo") %>
+      <%= image_tag("logo-mixperfume.avif", alt: "Logo Mix Perfume", class: "customer-logo") %>
+      <%= image_tag("logo-shoter.png", alt: "Logo Shoter", class: "customer-logo small-logo") %>
+    </div>
+  </div>
+  <div id="carouselExampleSlidesOnly" class="carousel slide d-md-none carousel-height-mobile" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-item-height active">
+        <%= image_tag("logo-urban-recovery.png", alt: "Logo Urban Recovery", class: "customer-logo-mobile d-block w-100") %>
+      </div>
+      <div class="carousel-item carousel-item-height">
+        <%= image_tag("logo-remax.png", alt: "Logo Remax", class: "customer-logo-mobile d-block w-100") %>
+      </div>
+      <div class="carousel-item carousel-item-height">
+        <%= image_tag("logo-essen.png", alt: "Logo Essen", class: "customer-logo-mobile d-block w-100") %>
+      </div>
+      <div class="carousel-item carousel-item-height">
+        <%= image_tag("logo-stanley.png", alt: "Logo Stanley", class: "customer-logo-mobile d-block w-100") %>
+      </div>
+      <div class="carousel-item carousel-item-height">
+        <%= image_tag("logo-soulmat.jpg", alt: "Logo Soul Mat", class: "customer-logo-mobile d-block w-100") %>
+      </div>
+      <div class="carousel-item carousel-item-height">
+        <%= image_tag("logo-mixperfume.avif", alt: "Logo Mix Perfume", class: "customer-logo-mobile d-block w-100") %>
+      </div>
+      <div class="carousel-item carousel-item-height">
+        <%= image_tag("logo-shoter.png", alt: "Logo Shoter", class: "customer-logo-mobile d-block w-100 small-logo") %>
+      </div>
     </div>
   </div>
 </div>
-<div class="our-team">
-  <p>TODO</p>
-</div>
-<div class="container m-5">
-  <div class="container">
-    <%= simple_form_for @contact do |f|  %>
-      <%= f.input :name, required: true %>
-      <%= f.input :email, required: true %>
-      <%= f.input :message, as: :text, required: false %>
-      <%= f.button :submit, 'Send Message', class: "btn-flat" %>
-    <% end %>
-  </div>
-</div>
-<div class="footer">
-  <div class="footer-links">
-    <%= image_tag("logo-white.png", alt: "Logo") %>
-  </div>
-  <div class="footer-copyright d-flex justify-content-center align-items-center">
-    <a href="#">Terms of use</a>
-    <a href="#">Privacy policy</a>
+<div class="banner-container">
+  <div class="banner d-flex justify-content-center align-items-center">
+    <div class="left-side-banner">
+      <div class="banner-contact-text m-5 row">
+        <h2 class="col-7">
+          Comienza tu viaje con nosotros ahora
+        </h2>
+      </div>
+      <%= link_to "Contact Us", new_contact_path, class: "btn-banner" %>
+    </div>
+    <div class="right-side-banner">
+      <div class="d-none d-sm-block">
+        <%= image_tag("book-star.png", alt: "Drawing of a book and a star", class: "contact-banner-img p-5") %>
+      </div>
+    </div>
   </div>
 </div>

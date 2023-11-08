@@ -16,3 +16,26 @@
   background: #012f27;
   color: white;
 }
+.btn-banner {
+  color: black;
+  padding: 10px 24px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  transition: background 0.3s ease;
+  text-decoration: none ;
+  text-align: center;
+  font-family: 'open sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 20px;
+  margin-left: 60px;
+}
+
+.btn-banner:hover {
+  background: #9b9999;
+  color: black;
+}
+
+.submit-btn {
+  border: none;
+}
