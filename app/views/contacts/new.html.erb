@@ -1,6 +1,6 @@
 <div class="p-5 contact-background">
   <div class="row p-5 justify-content-center">
-    <div class="col-4 d-flex flex-column gap-5">
+    <div class="contact-info-section col-12 col-sm-6 d-flex flex-column gap-5 mb-5">
       <div class="contact-text">
         <h2>Charlemos!</h2>
         <p class="subtitle-text">Tú gestionas tu marca, nosotros gestionamos tu presencia digital.</p>
@@ -12,18 +12,51 @@
       <div class="contact-text">
         <h3>Socials</h3>
         <p>LinkedIn</p>
+        <a href="https://wa.me/541164938949"><%= image_tag("whatsapp.png", alt: "Chat on Whatsapp", class: "whatsapp") %></a>
       </div>
       <div class="contact-text">
         <%= image_tag("fff.png", alt: "fli fla flu logo") %>
       </div>
     </div>
-    <div class="col-4">
-      <%= simple_form_for(@contact) do |f|  %>
-        <%= f.input :name %>
-        <%= f.input :email %>
-        <%= f.input :message, as: :text, required: false %>
-        <%= f.submit "Enviar mensaje", class: "btn-flat submit-btn" %>
-      <% end %>
+    <div class="contact-text rounded-md  col-12 col-sm-6 d-flex flex-column">
+        <%= form_for @contact, html: { class: 'mt-4' } do |form| %>
+
+        <% if @contact.errors.any? %>
+            <div id="error_explanation" class="bg-danger text-white p-3 mb-4 rounded">
+                <div class="font-weight-bold pb-4 rounded"><%= pluralize(@contact.errors.count, "error") %> prohibited this page from being saved:</div>
+
+                <ul class="list-unstyled pb-0 mb-0">
+                    <% @contact.errors.each do |error| %>
+                        <li class="text-light pl-4"><%= error.full_message %></li>
+                    <% end %>
+                </ul>
+            </div>
+        <% end %>
+
+        <div class="mb-3">
+            <%= form.label :name, class: 'form-label' %>
+            <%= form.text_field :name, class: 'form-control' %>
+        </div>
+
+        <div class="mb-3">
+            <%= form.label :email, class: 'form-label' %>
+            <%= form.email_field :email, class: 'form-control' %>
+        </div>
+
+        <div class="mb-3">
+            <%= form.label :message, class: 'form-label' %>
+            <%= form.text_area :message, class: 'form-control' %>
+        </div>
+
+        <div class="visually-hidden">
+            <%= form.label :nickname, class: 'form-label' %>
+            <%= form.text_field :nickname, class: 'form-control' %>
+        </div>
+
+        <div class="d-flex justify-content-end">
+            <%= form.submit "Send Message", class: 'btn btn-flat' %>
+        </div>
+        <% end %>
     </div>
   </div>
 </div>

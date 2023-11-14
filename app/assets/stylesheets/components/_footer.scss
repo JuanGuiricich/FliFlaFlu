@@ -13,10 +13,17 @@
 }
 
 .footer-copyright {
-  gap: 125px;
+  margin-right: 10rem;
 }
 
 .footer-copyright a {
   text-decoration: none;
   color: white;
+}
+@media (max-width: 992px) {
+  .footer-copyright {
+    margin-right: 0;
+    position: sticky;
+    bottom: 0;
+  }
 }
