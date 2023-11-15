@@ -80,3 +80,5 @@ end
 
 # Mail_form for contact form
 gem 'mail_form'
+# Cloudinary for image upload
+gem 'cloudinary'
